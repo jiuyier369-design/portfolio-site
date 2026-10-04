@@ -184,7 +184,7 @@ export const portfolioProjects: readonly PortfolioProjectEntry[] = [
     id: "job-copilot",
     name: portfolioProject.name,
     tagline: portfolioProject.tagline,
-    status: "开发暂缓 · 未上线",
+    status: "持续完善中 · 未上线",
     summary: portfolioProject.summary,
     href: "/portfolio/job-copilot",
     hrefLabel: "查看项目",

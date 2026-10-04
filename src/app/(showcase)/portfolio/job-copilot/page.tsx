@@ -42,7 +42,7 @@ export default function JobCopilotProjectPage() {
         </Link>
       </p>
 
-      <p className={styles.sectionNote}>Job Copilot 已暂停功能迭代，当前作为工程作品展示。v2 数据库完整验收和真实报告质量仍待完成。
+      <p className={styles.sectionNote}>Job Copilot 持续完善中，当前公开可审查的工程成果。v2 数据库完整验收和真实报告质量仍待完成。
         <a href="https://github.com/jiuyier369-design/job-copilot" target="_blank" rel="noopener noreferrer"> 查看 GitHub 源码与进度 →</a>
       </p>
       <section className={styles.section} aria-labelledby="job-positioning-heading">
