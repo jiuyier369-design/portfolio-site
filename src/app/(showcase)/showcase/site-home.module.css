@@ -1,0 +1,202 @@
+/* Route-local styles for /showcase (personal site entry). */
+
+.placeholder {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 1px 8px;
+  background: #f1f5f9;
+  box-shadow: inset 0 0 0 1px #cbd5e1;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+/* ---------- identity slot ---------- */
+
+.identity {
+  margin-top: 18px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 16px;
+  background: #f8fafc;
+  padding: 18px 16px;
+}
+
+.identityLabel {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.identityTitle {
+  margin: 8px 0 0;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.identityTagline {
+  margin: 8px 0 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* ---------- main grid: 2 columns on desktop, single on mobile ---------- */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+@media (min-width: 860px) {
+  .grid {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    align-items: start;
+  }
+}
+
+.sideStack {
+  display: grid;
+  gap: 14px;
+  min-width: 0;
+}
+
+.card {
+  min-width: 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 18px 16px;
+}
+
+.cardTitle {
+  margin: 0;
+  color: #0f172a;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.cardNote {
+  margin: 10px 0 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 20px;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- placeholder rows ---------- */
+
+.placeholderRows {
+  display: grid;
+  gap: 8px;
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+}
+
+.placeholderRow {
+  min-width: 0;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f8fafc;
+  padding: 10px 12px;
+}
+
+/* ---------- contact slots ---------- */
+
+.contactList {
+  display: grid;
+  gap: 10px;
+  margin: 14px 0 0;
+  padding: 12px 0 0;
+  border-top: 1px dashed #e2e8f0;
+}
+
+.contact {
+  min-width: 0;
+}
+
+.contactLabel {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.contactValue {
+  margin: 4px 0 0;
+}
+
+.contactNote {
+  margin: 4px 0 0;
+  color: #94a3b8;
+  font-size: 11px;
+  line-height: 18px;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- entry links ---------- */
+
+.entryList {
+  display: grid;
+  gap: 10px;
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+}
+
+.entryItem {
+  min-width: 0;
+}
+
+.entryLink {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  box-sizing: border-box;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 12px 14px;
+  text-decoration: none;
+}
+
+.entryLink:hover {
+  border-color: #7dd3fc;
+  background: #f0f9ff;
+}
+
+.entryLink:focus-visible {
+  outline: 3px solid #0284c7;
+  outline-offset: 2px;
+}
+
+.entryTitle {
+  color: #075985;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.entryDetail {
+  color: #64748b;
+  font-size: 12px;
+  line-height: 20px;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- status note ---------- */
+
+.statusText {
+  margin: 10px 0 0;
+  color: #475569;
+  font-size: 13px;
+  line-height: 21px;
+  overflow-wrap: anywhere;
+}

@@ -1,0 +1,1 @@
+Read AGENT_HANDOFF.md before making changes. This is an independent static personal website, using fictional Job Copilot mock data. Public personal information requires owner confirmation. Do not read or modify the original Job Copilot workspaces.

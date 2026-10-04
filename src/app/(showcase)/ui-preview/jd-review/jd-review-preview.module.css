@@ -1,0 +1,309 @@
+/* Route-local styles for /ui-preview/jd-review. */
+
+.backRow {
+  margin: 18px 2px 12px;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 4px 8px;
+  color: #0369a1;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.backLink:hover {
+  background: #e0f2fe;
+}
+
+.backLink:focus-visible {
+  outline: 3px solid #0284c7;
+  outline-offset: 2px;
+}
+
+.panel {
+  display: grid;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+/* ---------- review surface ---------- */
+
+.review {
+  min-width: 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 18px 16px;
+}
+
+.reviewHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.reviewTitle {
+  margin: 0;
+  color: #0f172a;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+/*
+ * "草稿 · 未确认" is deliberately a neutral/amber badge, never green.
+ * The preview must not read as a successful confirmation.
+ */
+.draftBadge {
+  flex: none;
+  border-radius: 999px;
+  padding: 2px 9px;
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.reviewNote {
+  margin: 8px 0 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 20px;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- split layout ---------- */
+
+.splitGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+@media (min-width: 860px) {
+  .splitGrid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+  }
+}
+
+.column {
+  min-width: 0;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #f8fafc;
+  padding: 14px 12px;
+}
+
+.columnTitle {
+  margin: 0 0 10px;
+  color: #0f172a;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.rawText {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 12px;
+  background: #ffffff;
+  color: #334155;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  line-height: 20px;
+  /* Long unbroken JD text must wrap rather than widen the page. */
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- segments ---------- */
+
+.segmentList {
+  display: grid;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.segment {
+  min-width: 0;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 12px;
+}
+
+.segmentHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.segmentId {
+  border-radius: 6px;
+  padding: 1px 7px;
+  background: #f8fafc;
+  box-shadow: inset 0 0 0 1px #cbd5e1;
+  color: #475569;
+  font-size: 11px;
+  line-height: 18px;
+  overflow-wrap: anywhere;
+}
+
+/* Confirmed = the human actually accepted a category. Muted teal, not green. */
+.categoryConfirmed {
+  border-radius: 999px;
+  padding: 1px 8px;
+  background: #ccfbf1;
+  color: #115e59;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px;
+  overflow-wrap: anywhere;
+}
+
+/* Pending = still a rule suggestion. Amber, matching the draft badge. */
+.categoryPending {
+  border-radius: 999px;
+  padding: 1px 8px;
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px;
+  overflow-wrap: anywhere;
+}
+
+.pendingTag {
+  border-radius: 999px;
+  padding: 1px 8px;
+  background: #ffffff;
+  box-shadow: inset 0 0 0 1px #fcd34d;
+  color: #92400e;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px;
+  overflow-wrap: anywhere;
+}
+
+.segmentSource {
+  margin: 8px 0 0;
+  color: #334155;
+  font-size: 13px;
+  line-height: 21px;
+  overflow-wrap: anywhere;
+}
+
+.segmentMeta {
+  margin: 6px 0 0;
+  color: #64748b;
+  font-size: 11px;
+  line-height: 18px;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- actions ---------- */
+
+.reviewActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.unconfirmedCount {
+  flex: none;
+  border-radius: 999px;
+  padding: 2px 9px;
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.confirmAction {
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 9px 16px;
+  background: #f1f5f9;
+  color: #94a3b8;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: not-allowed;
+}
+
+.reviewActionsNote {
+  min-width: 0;
+  flex: 1 1 240px;
+  color: #94a3b8;
+  font-size: 11px;
+  line-height: 18px;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- coverage notes ---------- */
+
+.notes {
+  margin-top: 22px;
+}
+
+.sectionHeading {
+  margin: 0 2px 10px;
+  color: #0f172a;
+  font-size: 17px;
+  line-height: 26px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.noteList {
+  display: grid;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.noteItem {
+  position: relative;
+  min-width: 0;
+  padding-left: 15px;
+  color: #475569;
+  font-size: 13px;
+  line-height: 21px;
+  overflow-wrap: anywhere;
+}
+
+.noteItem::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: #94a3b8;
+}

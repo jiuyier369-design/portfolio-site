@@ -1,0 +1,252 @@
+/* Route-local styles for /ui-preview/profile. */
+
+.backRow {
+  margin: 18px 2px 12px;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 4px 8px;
+  color: #0369a1;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.backLink:hover {
+  background: #e0f2fe;
+}
+
+.backLink:focus-visible {
+  outline: 3px solid #0284c7;
+  outline-offset: 2px;
+}
+
+.panel {
+  display: grid;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.editor {
+  min-width: 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 18px 16px;
+}
+
+.editorHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.editorTitle {
+  margin: 0;
+  color: #0f172a;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.versionBadge {
+  flex: none;
+  border-radius: 999px;
+  padding: 2px 9px;
+  background: #e0f2fe;
+  color: #075985;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.editorNote {
+  margin: 8px 0 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 20px;
+  overflow-wrap: anywhere;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+  margin-top: 16px;
+}
+
+.label {
+  color: #334155;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* Read-only by design: the preview cannot be typed into. */
+.input {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #f8fafc;
+  color: #334155;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.input:focus-visible {
+  outline: 3px solid #0284c7;
+  outline-offset: 1px;
+}
+
+.hint {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 11px;
+  line-height: 18px;
+}
+
+.factList {
+  display: grid;
+  gap: 10px;
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+}
+
+.fact {
+  min-width: 0;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #f8fafc;
+  padding: 12px;
+}
+
+.factHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.factId {
+  border-radius: 6px;
+  padding: 1px 7px;
+  background: #ffffff;
+  box-shadow: inset 0 0 0 1px #cbd5e1;
+  color: #475569;
+  font-size: 11px;
+  line-height: 18px;
+  overflow-wrap: anywhere;
+}
+
+.factCategory {
+  border-radius: 999px;
+  padding: 1px 8px;
+  background: #e0f2fe;
+  color: #075985;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.factContext {
+  border-radius: 999px;
+  padding: 1px 8px;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.factStatement {
+  margin: 8px 0 0;
+  color: #334155;
+  font-size: 13px;
+  line-height: 21px;
+  overflow-wrap: anywhere;
+}
+
+.editorActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.readOnlyAction {
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 9px 16px;
+  background: #f1f5f9;
+  color: #94a3b8;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: not-allowed;
+}
+
+.editorActionsNote {
+  min-width: 0;
+  color: #94a3b8;
+  font-size: 11px;
+  line-height: 18px;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- coverage notes ---------- */
+
+.notes {
+  margin-top: 22px;
+}
+
+.sectionHeading {
+  margin: 0 2px 10px;
+  color: #0f172a;
+  font-size: 17px;
+  line-height: 26px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.noteList {
+  display: grid;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.noteItem {
+  position: relative;
+  min-width: 0;
+  padding-left: 15px;
+  color: #475569;
+  font-size: 13px;
+  line-height: 21px;
+  overflow-wrap: anywhere;
+}
+
+.noteItem::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: #94a3b8;
+}

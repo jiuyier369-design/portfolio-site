@@ -1,0 +1,371 @@
+/* Route-local layout styles for /portfolio/job-copilot. */
+
+.section {
+  margin-top: 26px;
+}
+
+.sectionHeading {
+  margin: 0 2px 10px;
+  scroll-margin-top: 18px;
+  color: #0f172a;
+  font-size: 17px;
+  line-height: 26px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.sectionNote {
+  margin: 0 2px 12px;
+  max-width: 72ch;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 21px;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- 返回作品集 ---------- */
+
+.backRow {
+  margin: 16px 0 0;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: #0369a1;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.backLink:hover {
+  background: #e0f2fe;
+}
+
+.backLink:focus-visible {
+  outline: 3px solid #0284c7;
+  outline-offset: 2px;
+}
+
+/* ---------- 项目定位 ---------- */
+
+.positionCard {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-width: 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 16px;
+}
+
+.positionTagline {
+  margin: 0;
+  min-width: 0;
+  color: #0f172a;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.statusBadge {
+  flex: none;
+  border-radius: 999px;
+  padding: 2px 9px;
+  background: #e0f2fe;
+  box-shadow: inset 0 0 0 1px #7dd3fc;
+  color: #075985;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+/* ---------- 产品决策 ---------- */
+
+.decisionList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 860px) {
+  .decisionList {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.decisionItem {
+  min-width: 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 14px;
+}
+
+.decisionTitle {
+  margin: 0;
+  color: #0f172a;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.decisionDetail {
+  margin: 5px 0 0;
+  color: #475569;
+  font-size: 12px;
+  line-height: 20px;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- 产品前端预览入口 ---------- */
+
+.entryCard {
+  min-width: 0;
+  border: 1px solid #7dd3fc;
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 18px 16px;
+}
+
+.entryTitle {
+  margin: 0;
+  color: #0f172a;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.entryText {
+  margin: 6px 0 0;
+  max-width: 68ch;
+  color: #475569;
+  font-size: 13px;
+  line-height: 21px;
+  overflow-wrap: anywhere;
+}
+
+.entryLink {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 14px;
+  border-radius: 10px;
+  padding: 8px 14px;
+  border: 1px solid #7dd3fc;
+  background: #ffffff;
+  color: #075985;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.entryLink:hover {
+  background: #e0f2fe;
+}
+
+.entryLink:focus-visible {
+  outline: 3px solid #0284c7;
+  outline-offset: 2px;
+}
+
+/* ---------- 开发过程 ---------- */
+
+.processList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: process;
+}
+
+@media (min-width: 860px) {
+  .processList {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.processItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-width: 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 14px;
+}
+
+.processIndex {
+  flex: none;
+  color: #7dd3fc;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.processBody {
+  min-width: 0;
+}
+
+.processTitle {
+  margin: 0;
+  color: #0f172a;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.processDetail {
+  margin: 5px 0 0;
+  color: #475569;
+  font-size: 12px;
+  line-height: 20px;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- 可核验成果 ---------- */
+
+.stateCard {
+  border: 1px dashed #94a3b8;
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+.stateTitle {
+  margin: 0;
+  color: #0f172a;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.stateText {
+  margin: 8px auto 0;
+  max-width: 58ch;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 21px;
+  overflow-wrap: anywhere;
+}
+
+.closedAction {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 8px 14px;
+  background: #f1f5f9;
+  color: #94a3b8;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: not-allowed;
+}
+
+.outcomeList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.outcome {
+  min-width: 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 14px;
+}
+
+.outcomeLabel {
+  margin: 0;
+  color: #0f172a;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.outcomeDetail {
+  margin: 5px 0 0;
+  color: #475569;
+  font-size: 12px;
+  line-height: 20px;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- 目录 ---------- */
+
+.toc {
+  margin-top: 28px;
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 14px 16px;
+}
+
+.tocLabel {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.tocList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+}
+
+.tocItem {
+  min-width: 0;
+}
+
+.tocLink {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 4px 11px;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.tocLink:hover {
+  border-color: #7dd3fc;
+  color: #075985;
+}
+
+.tocLink:focus-visible {
+  outline: 3px solid #0284c7;
+  outline-offset: 2px;
+}

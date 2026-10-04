@@ -1,0 +1,160 @@
+/* Shared non-ready state blocks for the /ui-preview/** Mock pages. */
+
+.block {
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 18px 16px;
+}
+
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.title {
+  margin: 0;
+  color: #0f172a;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.code {
+  border-radius: 6px;
+  padding: 1px 7px;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 11px;
+  line-height: 18px;
+  overflow-wrap: anywhere;
+}
+
+.body {
+  margin: 8px 0 0;
+  max-width: 66ch;
+  color: #475569;
+  font-size: 13px;
+  line-height: 21px;
+  overflow-wrap: anywhere;
+}
+
+.action {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 7px 14px;
+  background: #f1f5f9;
+  color: #94a3b8;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: not-allowed;
+}
+
+/* ---------- tones ---------- */
+
+/* Loading: neutral, no alarm. */
+.loading {
+  border-style: dashed;
+  border-color: #cbd5e1;
+  background: #f8fafc;
+}
+
+.empty {
+  border-style: dashed;
+  border-color: #94a3b8;
+}
+
+.error {
+  border-color: #fca5a5;
+  background: #fef2f2;
+}
+
+.error .title,
+.error .body {
+  color: #991b1b;
+}
+
+.error .code {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.unauthorized {
+  border-color: #fdba74;
+  background: #fff7ed;
+}
+
+.unauthorized .title,
+.unauthorized .body {
+  color: #9a3412;
+}
+
+.unauthorized .code {
+  background: #ffedd5;
+  color: #9a3412;
+}
+
+.conflict {
+  border-color: #c4b5fd;
+  background: #f5f3ff;
+}
+
+.conflict .title,
+.conflict .body {
+  color: #5b21b6;
+}
+
+.conflict .code {
+  background: #ede9fe;
+  color: #5b21b6;
+}
+
+/* Uncertain must not look like success: amber, not green. */
+.uncertain {
+  border-color: #fcd34d;
+  background: #fffbeb;
+}
+
+.uncertain .title,
+.uncertain .body {
+  color: #92400e;
+}
+
+.uncertain .code {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+/* ---------- loading skeleton ---------- */
+
+.skeleton {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.skeletonRow {
+  display: grid;
+  gap: 6px;
+}
+
+.skeletonBar,
+.skeletonBarNarrow {
+  display: block;
+  height: 10px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #e2e8f0 0%, #f1f5f9 50%, #e2e8f0 100%);
+}
+
+.skeletonBarNarrow {
+  height: 8px;
+  background: #eef2f7;
+}

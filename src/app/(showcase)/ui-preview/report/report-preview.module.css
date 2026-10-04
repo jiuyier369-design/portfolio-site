@@ -1,0 +1,425 @@
+/* Route-local styles for /ui-preview/report. */
+
+.backRow {
+  margin: 18px 2px 12px;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 4px 8px;
+  color: #0369a1;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.backLink:hover {
+  background: #e0f2fe;
+}
+
+.backLink:focus-visible {
+  outline: 3px solid #0284c7;
+  outline-offset: 2px;
+}
+
+.panel {
+  display: grid;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+/* ---------- report surface ---------- */
+
+.surface {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+}
+
+/* 1. 结论摘要卡 */
+.summaryCard {
+  min-width: 0;
+  border: 1px solid #cbd5e1;
+  border-left: 3px solid #7dd3fc;
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 14px 16px;
+}
+
+.summaryHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.summaryHeading {
+  min-width: 0;
+}
+
+.company {
+  margin: 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 18px;
+  overflow-wrap: anywhere;
+}
+
+.jobTitle {
+  margin: 2px 0 0;
+  color: #0f172a;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+/*
+ * Completed = passed automatic validation, still awaiting the user. Muted
+ * teal, never a loud green: "passed validation" is not "verified as true".
+ */
+.completedBadge {
+  flex: none;
+  border-radius: 999px;
+  padding: 2px 9px;
+  background: #ccfbf1;
+  color: #115e59;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px;
+  max-width: 34ch;
+  overflow-wrap: anywhere;
+}
+
+.meta {
+  margin: 8px 0 0;
+  color: #94a3b8;
+  font-size: 11px;
+  line-height: 18px;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- content blocks (fixed order, no CSS reordering) ---------- */
+
+.block {
+  min-width: 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 14px 16px;
+}
+
+.blockHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.blockTitle {
+  margin: 0;
+  color: #0f172a;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.subTitle {
+  margin: 14px 0 0;
+  padding-top: 12px;
+  border-top: 1px dashed #e2e8f0;
+  color: #0f172a;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.blockText {
+  margin: 8px 0 0;
+  color: #334155;
+  font-size: 13px;
+  line-height: 21px;
+  overflow-wrap: anywhere;
+}
+
+.blockMeta {
+  margin: 6px 0 0;
+  color: #64748b;
+  font-size: 11px;
+  line-height: 18px;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- badges ---------- */
+
+.fitBadge,
+.actionBadge,
+.qualBadge,
+.evidenceBadge,
+.confirmTag {
+  flex: none;
+  border-radius: 999px;
+  padding: 1px 8px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.fit_strong {
+  background: #ccfbf1;
+  color: #115e59;
+}
+
+.fit_partial {
+  background: #e0f2fe;
+  color: #075985;
+}
+
+.fit_weak {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.actionBadge {
+  background: #f5f3ff;
+  box-shadow: inset 0 0 0 1px #ddd6fe;
+  color: #5b21b6;
+}
+
+/* Qualification: needs_confirmation is amber and must read apart from meets. */
+.qual_meets {
+  background: #ccfbf1;
+  color: #115e59;
+}
+
+.qual_does_not_meet {
+  background: #ffe4e6;
+  color: #9f1239;
+}
+
+.qual_needs_confirmation {
+  background: #fef3c7;
+  box-shadow: inset 0 0 0 1px #fcd34d;
+  color: #92400e;
+}
+
+/* Evidence tags mirror the frozen tones from the real report view. */
+.ev_same_task {
+  background: #ccfbf1;
+  box-shadow: inset 0 0 0 1px #99f6e4;
+  color: #115e59;
+}
+
+.ev_transferable {
+  background: #f0f9ff;
+  box-shadow: inset 0 0 0 1px #bae6fd;
+  color: #075985;
+}
+
+.ev_personal_practice {
+  background: #f5f3ff;
+  box-shadow: inset 0 0 0 1px #ddd6fe;
+  color: #5b21b6;
+}
+
+.ev_no_evidence {
+  background: #f1f5f9;
+  box-shadow: inset 0 0 0 1px #cbd5e1;
+  color: #475569;
+}
+
+.confirmTag {
+  background: #ffffff;
+  box-shadow: inset 0 0 0 1px #fcd34d;
+  color: #92400e;
+}
+
+/* ---------- rows ---------- */
+
+.rowList {
+  display: grid;
+  gap: 8px;
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.row {
+  min-width: 0;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f8fafc;
+  padding: 10px 12px;
+}
+
+.rowHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.rowId {
+  border-radius: 6px;
+  padding: 0 7px;
+  background: #ffffff;
+  box-shadow: inset 0 0 0 1px #cbd5e1;
+  color: #475569;
+  font-size: 11px;
+  line-height: 18px;
+  overflow-wrap: anywhere;
+}
+
+.rowJd {
+  margin: 6px 0 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 19px;
+  overflow-wrap: anywhere;
+}
+
+.rowQuestion {
+  margin: 0;
+  color: #334155;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.rowText {
+  margin: 6px 0 0;
+  color: #334155;
+  font-size: 13px;
+  line-height: 20px;
+  overflow-wrap: anywhere;
+}
+
+.rowBoundary {
+  margin: 6px 0 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 19px;
+  overflow-wrap: anywhere;
+}
+
+.rowMeta {
+  margin: 6px 0 0;
+  color: #94a3b8;
+  font-size: 11px;
+  line-height: 18px;
+  overflow-wrap: anywhere;
+}
+
+.impactList {
+  display: grid;
+  gap: 4px;
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 0;
+}
+
+.impactItem {
+  position: relative;
+  min-width: 0;
+  padding-left: 13px;
+  color: #475569;
+  font-size: 12px;
+  line-height: 19px;
+  overflow-wrap: anywhere;
+}
+
+.impactItem::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 999px;
+  background: #94a3b8;
+}
+
+/* ---------- surface actions ---------- */
+
+.surfaceActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 14px 16px;
+}
+
+.generateAction {
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 9px 16px;
+  background: #f1f5f9;
+  color: #94a3b8;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: not-allowed;
+}
+
+.surfaceActionsNote {
+  min-width: 0;
+  color: #94a3b8;
+  font-size: 11px;
+  line-height: 18px;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- coverage notes ---------- */
+
+.notes {
+  margin-top: 22px;
+}
+
+.sectionHeading {
+  margin: 0 2px 10px;
+  color: #0f172a;
+  font-size: 17px;
+  line-height: 26px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.noteList {
+  display: grid;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.noteItem {
+  position: relative;
+  min-width: 0;
+  padding-left: 15px;
+  color: #475569;
+  font-size: 13px;
+  line-height: 21px;
+  overflow-wrap: anywhere;
+}
+
+.noteItem::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: #94a3b8;
+}

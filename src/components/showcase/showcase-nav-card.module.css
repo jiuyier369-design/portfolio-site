@@ -1,0 +1,202 @@
+/* Navigation preview cards for /ui-preview.
+   Route-local to components/showcase, so no shared stylesheet is touched. */
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 760px) {
+  .list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1040px) {
+  .list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.item {
+  min-width: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 100%;
+  min-width: 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 16px;
+  text-decoration: none;
+  color: inherit;
+}
+
+a.card:hover {
+  border-color: #7dd3fc;
+  background: #f8fcff;
+}
+
+a.card:focus-visible {
+  outline: 3px solid #0284c7;
+  outline-offset: 2px;
+}
+
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.title {
+  min-width: 0;
+  margin: 0;
+  color: #0f172a;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.badge {
+  flex: none;
+  display: inline-flex;
+  max-width: 100%;
+  align-items: center;
+  border-radius: 999px;
+  padding: 2px 9px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px;
+  box-shadow: inset 0 0 0 1px currentColor;
+  overflow-wrap: anywhere;
+}
+
+.badgeMock {
+  background: #fffbeb;
+  color: #92400e;
+}
+
+.badgePreview {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.badgeClosed {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.badgePlaceholder {
+  background: #ffffff;
+  color: #64748b;
+}
+
+.summary {
+  margin: 8px 0 0;
+  color: #475569;
+  font-size: 13px;
+  line-height: 21px;
+  overflow-wrap: anywhere;
+}
+
+.route {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 10px 0 0;
+}
+
+.routeLabel {
+  color: #94a3b8;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.routePath {
+  max-width: 100%;
+  border-radius: 6px;
+  padding: 1px 6px;
+  background: #f1f5f9;
+  color: #334155;
+  font-size: 12px;
+  line-height: 18px;
+  overflow-wrap: anywhere;
+}
+
+.planned {
+  margin: 8px 0 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 19px;
+  overflow-wrap: anywhere;
+}
+
+/* Pushes the status footer to the bottom so cards in a row line up. */
+.availabilityText {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  border-top: 1px solid #e2e8f0;
+  color: #94a3b8;
+  font-size: 11px;
+  line-height: 18px;
+  overflow-wrap: anywhere;
+}
+
+.action {
+  margin-top: 8px;
+  color: #0284c7;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.actionClosed {
+  display: inline-flex;
+  align-self: flex-start;
+  margin-top: 8px;
+  border-radius: 8px;
+  padding: 4px 10px;
+  background: #f1f5f9;
+  color: #94a3b8;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+/* ---------- empty state ---------- */
+
+.empty {
+  border: 1px dashed #94a3b8;
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+.emptyTitle {
+  margin: 0;
+  color: #0f172a;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 700;
+}
+
+.emptyText {
+  margin: 8px auto 0;
+  max-width: 44ch;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 21px;
+}

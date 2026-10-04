@@ -1,0 +1,244 @@
+/* Route-local layout styles for /portfolio. */
+
+.section {
+  margin-top: 26px;
+}
+
+.sectionHeading {
+  margin: 0 2px 10px;
+  scroll-margin-top: 18px;
+  color: #0f172a;
+  font-size: 17px;
+  line-height: 26px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.sectionNote {
+  margin: 0 2px 12px;
+  max-width: 72ch;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 21px;
+  overflow-wrap: anywhere;
+}
+
+/* Neutral placeholder styling: visibly "not filled in yet", never a real value. */
+.placeholder {
+  color: #94a3b8;
+}
+
+/* ---------- 分工说明 ---------- */
+
+.divisionNote {
+  margin: 16px 0 0;
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+  background: #f8fafc;
+  padding: 12px 14px;
+  color: #475569;
+  font-size: 13px;
+  line-height: 21px;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- 作品项目 ---------- */
+
+.projectList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.projectCard {
+  min-width: 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 18px;
+  background: #ffffff;
+  padding: 18px 16px;
+}
+
+.projectHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.projectHeadings {
+  min-width: 0;
+}
+
+.projectName {
+  margin: 0;
+  color: #0f172a;
+  font-size: 19px;
+  line-height: 27px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.projectTagline {
+  margin: 3px 0 0;
+  color: #0369a1;
+  font-size: 13px;
+  line-height: 21px;
+  overflow-wrap: anywhere;
+}
+
+.statusBadge {
+  flex: none;
+  border-radius: 999px;
+  padding: 2px 9px;
+  background: #e0f2fe;
+  box-shadow: inset 0 0 0 1px #7dd3fc;
+  color: #075985;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.projectSummary {
+  margin: 12px 0 0;
+  max-width: 78ch;
+  color: #475569;
+  font-size: 14px;
+  line-height: 23px;
+  overflow-wrap: anywhere;
+}
+
+.projectAction {
+  margin: 14px 0 0;
+  padding-top: 12px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.projectLink {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 8px 14px;
+  border: 1px solid #7dd3fc;
+  background: #ffffff;
+  color: #075985;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.projectLink:hover {
+  background: #e0f2fe;
+}
+
+.projectLink:focus-visible {
+  outline: 3px solid #0284c7;
+  outline-offset: 2px;
+}
+
+/* ---------- 联系方式 ---------- */
+
+.contactList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 860px) {
+  .contactList {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.contact {
+  min-width: 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 14px;
+}
+
+.contactLabel {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.contactValue {
+  margin: 4px 0 0;
+  color: #334155;
+  font-size: 14px;
+  line-height: 22px;
+  overflow-wrap: anywhere;
+}
+
+.contactNote {
+  margin: 6px 0 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 20px;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- 目录 ---------- */
+
+.toc {
+  margin-top: 28px;
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 14px 16px;
+}
+
+.tocLabel {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.tocList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+}
+
+.tocItem {
+  min-width: 0;
+}
+
+.tocLink {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 4px 11px;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.tocLink:hover {
+  border-color: #7dd3fc;
+  color: #075985;
+}
+
+.tocLink:focus-visible {
+  outline: 3px solid #0284c7;
+  outline-offset: 2px;
+}

@@ -1,0 +1,369 @@
+/* Page chrome for the showcase routes (/portfolio, /ui-preview).
+   Lives under components/showcase so no global or shared stylesheet is touched. */
+
+.page {
+  min-height: 100vh;
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+/* ---------- demonstration strip ---------- */
+
+.demoStrip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: #fffbeb;
+  border-bottom: 1px solid #fde68a;
+}
+
+.demoStripBadge {
+  flex: none;
+  border-radius: 999px;
+  padding: 2px 9px;
+  background: #fef3c7;
+  box-shadow: inset 0 0 0 1px #d97706;
+  color: #92400e;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.demoStripText {
+  min-width: 0;
+  color: #92400e;
+  font-size: 12px;
+  line-height: 19px;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- top bar ---------- */
+
+.bar {
+  background: #ffffff;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+.barInner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 16px;
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 12px 16px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  border-radius: 10px;
+  padding: 4px 6px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand:focus-visible {
+  outline: 3px solid #0284c7;
+  outline-offset: 2px;
+}
+
+.brandMark {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: #0f172a;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.brandText {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* Navigation wraps instead of overflowing, so 320px never scrolls sideways. */
+.nav {
+  min-width: 0;
+}
+
+.navList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  min-width: 0;
+}
+
+.navLink {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 6px 12px;
+  border: 1px solid transparent;
+  color: #334155;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navLink:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.navLink:focus-visible {
+  outline: 3px solid #0284c7;
+  outline-offset: 2px;
+}
+
+.navLinkCurrent {
+  background: #e0f2fe;
+  border-color: #7dd3fc;
+  color: #075985;
+}
+
+/* ---------- main ---------- */
+
+.main {
+  padding: 20px 16px 0;
+}
+
+.mainInner {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.hero {
+  border: 1px solid #cbd5e1;
+  border-radius: 18px;
+  background: #ffffff;
+  padding: 22px 18px;
+  box-shadow: 0 20px 50px -44px rgba(15, 23, 42, 0.4);
+}
+
+.eyebrow {
+  margin: 0;
+  color: #0369a1;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.title {
+  margin: 8px 0 0;
+  color: #0f172a;
+  font-size: 26px;
+  line-height: 34px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  overflow-wrap: anywhere;
+}
+
+.intro {
+  margin: 10px 0 0;
+  max-width: 68ch;
+  color: #475569;
+  font-size: 14px;
+  line-height: 23px;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- shared blocks used by both pages ---------- */
+
+.section {
+  margin-top: 26px;
+}
+
+.sectionHeading {
+  margin: 0 2px 10px;
+  scroll-margin-top: 18px;
+  color: #0f172a;
+  font-size: 17px;
+  line-height: 26px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.sectionNote {
+  margin: 0 2px 12px;
+  max-width: 72ch;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 21px;
+  overflow-wrap: anywhere;
+}
+
+.card {
+  border: 1px solid #cbd5e1;
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 16px;
+}
+
+.cardTitle {
+  margin: 0;
+  color: #0f172a;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.cardText {
+  margin: 6px 0 0;
+  color: #475569;
+  font-size: 13px;
+  line-height: 21px;
+  overflow-wrap: anywhere;
+}
+
+.badge {
+  display: inline-flex;
+  max-width: 100%;
+  align-items: center;
+  border-radius: 999px;
+  padding: 2px 9px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px;
+  box-shadow: inset 0 0 0 1px currentColor;
+  overflow-wrap: anywhere;
+}
+
+.badgeMock {
+  background: #fffbeb;
+  color: #92400e;
+}
+
+.badgePreview {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.badgeClosed {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.badgePlaceholder {
+  background: #ffffff;
+  color: #64748b;
+}
+
+.placeholder {
+  color: #94a3b8;
+  font-style: normal;
+}
+
+.stateCard {
+  border: 1px dashed #94a3b8;
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 22px 16px;
+  text-align: center;
+}
+
+.stateTitle {
+  margin: 0;
+  color: #0f172a;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.stateText {
+  margin: 8px auto 0;
+  max-width: 52ch;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 21px;
+  overflow-wrap: anywhere;
+}
+
+.closedAction {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 8px 14px;
+  background: #f1f5f9;
+  color: #94a3b8;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: not-allowed;
+}
+
+/* ---------- footer ---------- */
+
+.footer {
+  margin-top: 32px;
+  border-top: 1px solid #cbd5e1;
+  background: #ffffff;
+  padding: 18px 16px 28px;
+}
+
+.footerInner {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.footerText {
+  margin: 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 20px;
+  overflow-wrap: anywhere;
+}
+
+.footerText + .footerText {
+  margin-top: 5px;
+}
+
+@media (min-width: 760px) {
+  .main {
+    padding: 26px 24px 0;
+  }
+
+  .barInner {
+    padding: 12px 24px;
+  }
+
+  .hero {
+    padding: 28px 26px;
+  }
+
+  .title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .footer {
+    padding: 20px 24px 32px;
+  }
+}
